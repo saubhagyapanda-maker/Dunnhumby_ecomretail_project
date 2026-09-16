@@ -1,0 +1,13 @@
+{
+	"name": "DS_AZURE_CSVOREXCEL",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_AZURE_CSVOREXCEL",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

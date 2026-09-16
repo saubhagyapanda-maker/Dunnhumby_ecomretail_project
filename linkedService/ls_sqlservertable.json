@@ -1,0 +1,21 @@
+{
+	"name": "ls_sqlservertable",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"server": "LAPTOP-BGA74RUN\\SQLEXPRESS",
+			"database": "DH_Retail_DB",
+			"encrypt": "mandatory",
+			"trustServerCertificate": true,
+			"authenticationType": "SQL",
+			"userName": "Azureproject",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiIwMjViMzdmOS0yMWIxLTRhM2YtOGYwYi1kM2ViZWE3OWNjMmUiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "LinkedintegrationRuntimedunnhumby",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

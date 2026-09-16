@@ -1,0 +1,12 @@
+{
+	"name": "LinkedintegrationRuntimedunnhumby",
+	"properties": {
+		"type": "SelfHosted",
+		"typeProperties": {
+			"linkedInfo": {
+				"resourceId": "/subscriptions/ee0538e8-0623-4ab4-ac7a-1f9a4998b486/resourcegroups/rg_ecomretail/providers/Microsoft.DataFactory/factories/adf-ecomretail/integrationruntimes/shir-ecomretail",
+				"authorizationType": "Rbac"
+			}
+		}
+	}
+}

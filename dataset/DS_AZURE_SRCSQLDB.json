@@ -1,0 +1,17 @@
+{
+	"name": "DS_AZURE_SRCSQLDB",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_AZURE_SRCSQLDB",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "dunnhumby_tbl_job_dtls"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

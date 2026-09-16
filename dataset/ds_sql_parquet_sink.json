@@ -1,0 +1,21 @@
+{
+	"name": "ds_sql_parquet_sink",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_adls_sink",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "sqldata",
+				"fileSystem": "inputdata"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

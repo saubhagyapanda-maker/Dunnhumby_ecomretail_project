@@ -1,0 +1,33 @@
+{
+	"name": "DS_AZADLS_PARQUETCSVCOPY_CLOUD_SINK",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_adls_sink",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"target_account_loc": {
+				"type": "string"
+			},
+			"target_directory": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "olist_order_payments_dataset.parquet",
+				"folderPath": {
+					"value": "@dataset().target_directory",
+					"type": "Expression"
+				},
+				"fileSystem": "input"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
